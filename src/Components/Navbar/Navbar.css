@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    position: relative;
+    background-color:rgb(37, 37, 37);
+    height: 5rem;
+}
+.nav-wrapper {
+    display: flex;
+
+}
+
+.nav-logo {
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+    display: flex;
+    position: relative;
+}
+
+.nav-logo h1, i {
+    color: white;
+    margin-left: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-logo i {
+    display: flex;
+    position: relative;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+.nav-btn:hover {
+  color: yellow;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+  font-family: sans-serif;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: white;
+}
+
+.nav-item .active {
+  color: white;
+  border: 1px solid white;
+}
+
+.nav-link-wrapper {
+  display: flex;
+  margin-left: 73rem;
+  margin-top: 1.3rem;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background:   rgb(37, 37, 37);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: rgb(95, 95, 211);
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
+      .nav-link-wrapper {
+        display: flex;
+      }
+    }
