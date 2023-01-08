@@ -16,7 +16,7 @@ function Navbar() {
         <div className='nav-wrapper'>
             <div className='nav-logo'>
                 <h1>ObungaMC</h1>
-                <i class="fa-solid fa-server"></i>
+                <i class="fa-solid fa-cubes"></i>
             </div>
             <div className="nav-link-wrapper">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
